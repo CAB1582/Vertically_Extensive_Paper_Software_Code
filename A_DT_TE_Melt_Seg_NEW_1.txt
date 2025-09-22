@@ -1,0 +1,282 @@
+3e6
+****MAIN CHOICE - Flags****
+Magma (=0) or Magma and Mush (>0)
+1
+Eruption from the shallow chamber? (Yes>0, No=0)
+0
+Transfer from mid to shallow? (Yes>0,No=0)
+1
+Transfer from lower to mid (Yes>0, No=0)
+1
+WriteFL? - write out pressure for lower crust each time step (Yes>0,No=0)
+0
+MaxPor? - write out melt fraction in lower and upper crust (Yes>0,No=0)
+0
+CompChoice - Matt >0 , old = 0
+0
+melt segregation occuring in the shallow chamber? - Yes =0, no>0
+1
+Melt segregation occuring in the upper crust? - Yes =0, no>0
+0
+*****Transfer Events*****
+***Main Choices for mid crust***
+Time after intrusion into shallow chamber, eruption occurs (ka)
+10
+Diameter of upper magma reservoir (km)
+40
+Diameter of mid magma reservoir (km)
+48.99
+Depth of Intrusion in upper (km)
+5
+Crustal Shear Viscosity for mid
+1e19
+Proportion of HMF layer evacuated-mid (1 - all evacuate)
+1
+Proportion of evacuation erupted (1- all erupt)
+1
+Density intrusion into the shallow crust? (=0 - no, >0 - yes)
+1 
+***Main Choices for lower crust***
+Rate of transfer (if=0, it transfers as 1)(Ma)
+0
+Transfer width (km)
+0.1
+Diameter of lower magma reservoir (km)
+60
+Depth of intrusion in mid crust (km)
+15
+Crustal Shear viscosity for lower 
+1e18
+Proportion of HMF layer evacuated - lower (1- all evac)
+1
+Density intrusion into the mid crust (=0 - no, >0 -yes)
+1
+***Background Choices***
+Buoy_fact*(hb+hRTI)
+0.5
+Critical Melt fraction
+0.6
+The amount above the HMF layer to take density (km)
+2
+Flag for Volume Transfer (VolFlag)
+0
+Pore compressibility of magma (mpc)
+0
+Magma compressibility (mc)
+0
+Elactic Modulus
+1e10
+Proportion of D the initial amp is 
+0.001
+Beta
+0.14
+Length to take temperature gradient over - mid (km)
+0.2
+Length to take temperaute gradient over - lower (km)
+0.2
+Emplacement melt fraction barrier
+0.6
+****Physical properties****
+Grain size (a) (m)
+2.75e-3
+b
+0.008
+alpha
+3.00
+beta
+-0.5
+cee !If >0 use my equation otherwise use James' equation for bulk viscosity
+0.0
+g (m2/s)
+9.81
+Solid-To-Liquid Transition (SLT)
+0.7
+Density (kg/m3)
+2850
+Mininum melt viscosity (Pas) 
+1
+Maximum melt viscosity (Pas)
+1e5
+Matrix shear viscosity (Pas) 
+1e15
+Thermal conductivity kt (W/k/m) [consistent with solano et al 2014]
+3.0
+Latent heat (J/kg) [consistent with solano et al 2014]
+550000.0
+Specific heat capacity (J/kg/K) [consistent with solano et al 2014]
+1100.0
+****Properties of phase diagram****
+Ae (eutectic)
+1
+Depth that separates top and bottom (km)
+15
+Depth of crust (km)
+30
+**top half of crust**
+Solidus (K) top
+1123.15
+Initial Cb of crust (Tl calculated from this) top
+0.4
+A1 (for Cb < e) top
+50 
+B1 top
+-360
+C1 top
+1433.15
+**bottom half of crust**
+Solidus (K) Consistent across all compositions bottom
+1423.15
+Initial Cb of crust (Tl calculated from this)bottom
+0.09
+A1 (for Cb < e)bottom
+50
+B1 bottom
+-360
+C1 bottom
+1733.15
+**'below' depth of crust**
+Solidus (K) Consistent across all compositions bottom
+1423.15
+Initial Cb of crust (Tl calculated from this)bottom
+0.09
+A1 (for Cb < e)bottom
+50
+B1 bottom
+-360
+C1 bottom
+1733.15
+**for all crust**
+A2 (for Cb > e)
+0
+B2
+0
+C2
+0
+a in SiO2 equation
+61.2
+b in SiO2 equation
+14.0
+c in SiO2 equation
+4.4
+d in SiO2 equation
+1.6
+Density Solid A (kg/m3) (not used if =0)
+3000
+Density Solid B (kg/m3)
+2600
+Density Liquid A (kg/m3)
+2800
+Density Liquid B (kg/m3)
+2350
+Density-based emplacement? (yes if >0)
+1
+****Isotope properties****
+PartitionA Consistent with Nd?
+0.08
+PartitionB Consistent with Nd?
+0.08
+InitialI1 (here represents crustal 143Nd)
+20
+InitialI2 (here represents crustal 144Nd) (if zero then crustal Nd not solved for)
+0.00001
+Closure Temp (K)
+1123.15
+Starting time (Ma)
+0
+****Sill properties****
+Sill thickness (km) [consistent with solano et al 2014]
+0.1
+Exponent for random depth range (must be odd number, 1=uniform, 3,5 etc. become increasingly narrow)
+1
+Sill trace element 1 (here represents basalt 143Nd)
+0.00001
+Sill trace element 2 (here represents basalt 144Nd)
+20
+Sill bulk comp
+0.09
+Emplacement depth 1 (km) [consistent with solano et al 2014]
+30
+Random interval of emplacment 1 (km) (this is total, half above, half below intrusion depth)
+0.0
+Number of random sills to emplace in batch 1 (if > total_thickness/sill_thickness then all random)
+100
+Total thickness to emplace of first batch (km)
+15
+Interval between first sill emplacements in Ma 0.04Ma interval with 200m sills = 5mm/a 
+0.015
+Pause between first and second batches (My)
+0
+Emplacement depth 2 (km)
+19
+Random interval of emplacment 2 (km)
+0.6
+Number of random sills to emplace in batch 2 (if > total_thickness/sill_thickness then all random)
+100
+Total thickness to emplace of second batch (km)
+0
+Interval between second sill emplacements in Ma 0.04Ma interval with 200m sills = 5mm/a 
+0.02
+Pause between second and third batches (My)
+0
+Emplacement depth 3 (km)
+18.75
+Random interval of emplacment 3 (km)
+0.2
+Number of random sills to emplace in batch 3 (if > total_thickness/sill_thickness then all random)
+100
+Total thickness to emplace of third batch (km)
+0.0
+Interval between third sill emplacements in Ma 0.04Ma interval with 200m sills = 5mm/a 
+0.02
+Theshold porosity below which emplacement occurs (not used if >1)
+0.6
+Under/Overaccrete? Over if >0 
+1
+****General model properties****
+Base of model (km) 
+40
+Top of model (km) [consistent with solano et al 2014]
+0
+Initial geotherm (K/km) [NOTE CANNOT HAVE INITIAL MELT PRESENT OR ENTHALPY CALCULATED INCORRECTLY, IF DEPTH >0 THEN THIS GEOTHERM IS USED TO CALCULATE TEMP AT TOP OF MODEL]
+25
+Simulation time (My)
+10.0
+****Output data specification****
+Time interval between output files (ka)
+1
+Depth at which to write depth-specific data (km)
+18.15
+Number of timesteps for which to write time-specific data
+100
+Time after which to write time-specific data (My)
+0
+****Solver/setup****
+keff (used only if > 0)
+0
+TSill (used only if > 0)
+0
+Switch on/off melt segregation (0 = off, > 0 = on)
+1
+Number of nodes per dimensionless sill thickness
+20
+MinDiff (vary between 0 and 1; 0 introduces no numerical diffusion, 1 is equivalent to dz)
+0.0004
+DiffExp (larger values restrict additional diffusion to high and low values of Cb)
+200
+MaxDiff (vary between 0 and 1; 0 introduces no numerical diffusion, 1 is equivalent to dz)
+0.004
+Advect timestep multiplier on velocity
+20
+Artificial diffusion timestep multiplier
+20
+Diffusion timestep multiplier (James used 8; this seems to be the minimum. Increase to reduce dt and increase stability; decrease to make runs faster)
+20
+****Check mass conservation****
+Upper node - upper crust (4km)
+-1000
+Lower node - upper crust (10km)
+-1499
+Upper node - lower crust (11km)
+-3000
+Lower node - lower crust (25km)
+-5000
